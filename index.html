@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            box-shadow: 3px 3px 5px pink;
+        }
+        h2{
+            border: 2px solid black;
+            text-shadow: 2px 2px 2px pink;
+
+        }
+        .t1{
+            height: 200px;
+            width: 200px;
+        }
+        .t2{
+            height: 300px;
+            width: 300px;
+            background-image: radial-gradient(blue,pink,purple,hotpink,violet);
+        }
+        .t3{
+            height: 400px;
+            width: 400px;
+            background-image:conic-gradient(yellow 90deg,orange 40deg,red,blue);       
+        }
+        @media  screen and (max-width: 420px) {
+            .t2,
+            .t3{
+                display: none;
+            }
+            
+        }
+        @media  screen and (min-width:421px) and (max-width:720px) {
+            .t1,
+            .t3{
+                display: none;
+            }
+        }
+        @media screen and (min-width:721px){
+            .t1,
+            .t2{
+                display: none;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <table class="t1">
+        <caption><h2>TABLE-1</h2></caption>
+        <tr>
+            <td style="background-color: blue;"></td>
+            <td style="background-color: pink;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: aquamarine;"></td>
+            <td style="background-color: darkmagenta;"></td>
+        </tr>
+    </table>
+    <table class="t2">
+        <caption><h2>TABLE-2</h2></caption>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <table class="t3">
+        <caption><h2>TABLE-3</h2></caption>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
